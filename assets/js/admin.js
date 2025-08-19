@@ -7,8 +7,13 @@ jQuery(document).ready(function($) {
         var postId = button.data('post-id');
         var formId = button.data('form-id');
         var formName = button.data('form-name');
+        var formType = button.data('form-type');
         
-        $('#efc-modal-title').text('Mensajes del formulario: ' + formName);
+        var badgeClass = formType === 'Elementor' ? 'efc-modal-type-elementor' : 'efc-modal-type-royal-addons';
+        var titleHtml = 'Mensajes del formulario: ' + formName + 
+                       '<span class="efc-modal-type-badge ' + badgeClass + '">' + formType + '</span>';
+        
+        $('#efc-modal-title').html(titleHtml);
         $('#efc-modal-body').html('<div class="efc-loading">Cargando...</div>');
         $('#efc-messages-modal').fadeIn(300);
         
@@ -56,6 +61,14 @@ jQuery(document).ready(function($) {
     
     function displayFormMessages(data) {
         var html = '';
+        
+        // Mostrar tipo de formulario en el contenido también
+        if (data.form_type) {
+            var typeClass = data.form_type === 'Elementor' ? 'efc-type-elementor' : 'efc-type-royal-addons';
+            html += '<div style="margin-bottom: 20px;">';
+            html += '<span class="efc-form-type ' + typeClass + '">' + data.form_type + '</span>';
+            html += '</div>';
+        }
         
         html += '<div class="efc-message-group">';
         html += '<h3>Mensajes de Respuesta</h3>';

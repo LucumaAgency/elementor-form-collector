@@ -1,20 +1,22 @@
 # Elementor Form Collector
 
-Plugin de WordPress que detecta y lista todos los formularios de Elementor en tu sitio, permitiéndote ver fácilmente todos los mensajes configurados en cada formulario.
+Plugin de WordPress que detecta y lista todos los formularios de Elementor y Royal Elementor Addons en tu sitio, permitiéndote ver fácilmente todos los mensajes configurados en cada formulario.
 
 ## 🚀 Características
 
 - ✅ Detecta automáticamente todos los formularios de Elementor en tu sitio
+- ✅ **NUEVO:** Soporte completo para formularios de Royal Elementor Addons
 - ✅ Muestra una lista completa de formularios con información de la página donde están ubicados
+- ✅ Identifica visualmente el tipo de formulario (Elementor o Royal Addons)
 - ✅ Vista detallada de mensajes configurados para cada formulario
 - ✅ Visualización de campos del formulario con sus propiedades
 - ✅ Interfaz intuitiva con modal interactivo
-- ✅ Compatible con la última versión de WordPress y Elementor
+- ✅ Compatible con la última versión de WordPress, Elementor y Royal Elementor Addons
 
 ## 📋 Requisitos
 
 - WordPress 5.0 o superior
-- Elementor (versión gratuita o Pro)
+- Elementor (versión gratuita o Pro) y/o Royal Elementor Addons
 - PHP 7.0 o superior
 
 ## 🔧 Instalación
@@ -80,10 +82,21 @@ Si encuentras algún bug, por favor abre un issue en este repositorio con:
 - Pasos para reproducirlo
 - Versión de WordPress y Elementor que estás usando
 
+## 📦 Versiones
+
+### v1.1.0 (Actual)
+- Añadido soporte completo para Royal Elementor Addons
+- Identificación visual del tipo de formulario
+- Mejoras en la extracción de campos y mensajes
+
+### v1.0.0
+- Versión inicial con soporte para Elementor
+
 ## 🔮 Roadmap
 
 - [ ] Exportar mensajes a CSV/Excel
 - [ ] Búsqueda y filtrado de formularios
 - [ ] Edición de mensajes desde el plugin
+- [ ] Soporte para más addons de Elementor (JetElements, Essential Addons, etc.)
 - [ ] Soporte para otros constructores de páginas
 - [ ] Dashboard con estadísticas de formularios

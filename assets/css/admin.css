@@ -219,3 +219,44 @@
     border-radius: 5px;
     margin-top: 20px;
 }
+
+.efc-form-type {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.efc-type-elementor {
+    background: #92003b;
+    color: #fff;
+}
+
+.efc-type-royal-addons {
+    background: #6c5ce7;
+    color: #fff;
+}
+
+.efc-modal-type-badge {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.efc-modal-type-elementor {
+    background: #92003b;
+    color: #fff;
+}
+
+.efc-modal-type-royal-addons {
+    background: #6c5ce7;
+    color: #fff;
+}
